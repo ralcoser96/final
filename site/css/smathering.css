@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+
+	
+	background-color: #EEEFDA;
+	-webkit-background-color:#ffd1dc;
+	/*border-left:thick;
+	border-left-width: 350 px;
+	border-left-color: #6A6F69;
+	
+	border-left-style: solid; 
+	
+	border-right: thick;
+	border-right-style: solid;
+	border-right-width: 100%;
+	border-right-color: #6A6F69; */
+	margin-left: 10%; 
+	-webkit-margin-left:10%;
+	margin-right: 10%;
+	-webkit-margin-right:10%;
+	
+	
+}
+
+img{
+	width: 50%;
+	hiehgt: 50%;
+	padding-left: 30%;
+	align-content: center;
+}
+
+.slide{
+	display: inline-block;
+	width: 49%;
+	padding-top: 5%;
+}
+	
+	
+
+
+nav{
+	text-align: center;
+	text-decoration-color: #6a6f69;
+	
+	background-color: #C6E1C0;
+	align-content: center;
+	display: block;
+	width: 100%;
+	
+	-webkit-text-align: center;
+	
+	-webkit-background-color: #C6E1C0;
+	-webkit-align-content: center;
+	-webkit-display: block;
+	
+	
+}
+
+nav a{
+	align-content: center;
+	background-color: #c6e1c0;
+	width: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-decoration: none;
+	
+	
+} 
+
+.dropbtn{
+	background-color:#c6e1c0;
+	color: #6a6f69;
+	padding:16px;
+	font-siz:16px;
+	font: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border:none; 
+	
+}
+.dropdown{
+	position: relative;
+	display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position: absolute;
+	background-color:#eeefda;
+	min-width: 160px;
+	box-shadow: 0px 8px 16pc 0pc rgba(0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover {
+	background-color:#ffd1dc;
+	
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown:hover .dropbtn{
+	background-color: #ffd1dc;
+}
+
+
+.footer{
+	position: fixed;
+	left:0;
+	bottom:0;
+	width: 100%;
+	background-color: #c6e1c0;
+	color:#6a6f69;
+	text-align:center;
+}
+
+
+p{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+h1{
+	text-align: center;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	/* background-color: #C6E1C0;*/
+}
+
+h2{
+	text-align: center;
+
+}
+h3{
+	text-align: center;
+}
+
+header{
+	background-color: #C6E1C0; 
+}
+
+.newStory{
+	display: inline-block;
+	width: 48%;
+	border:double;
+	border-color: #6A6F69;
+	
+	
+}
+
+.newStory div{
+	
+	padding:15%;
+}
+
+#me{
+	display: inline-block;
+	border:double;
+	border-color: #6A6F69;
+	margin-right: 2%;
+}
+
+
+.row{
+	display:flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column{
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img{
+	margin-top: 8px;
+	vertical-align: middle;
+	width:100%;
+}
+
+@media screen and (max-width: 800px){
+	.column{
+		flex:50%;
+		max-width: 50%;
+	}
+	
+	.slide{
+		flex:50%;
+	}
+	
+	.newstory{
+		flex:50%
+	}
+}
+
+@media screen and (max-width: 600px){
+	.column{
+		flex:100%;
+		max-width: 100%;
+	}
+	.slide{
+		flex:100%
+	    
+	}
+	.newstory{
+		flex:100%;
+		max-width:100%;
+		
+	}
+}
